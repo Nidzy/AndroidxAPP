@@ -20,5 +20,5 @@ class CityRepository {
         ApiConfig.getInstance().create(ApiService::class.java).getLondon()
 
     suspend fun fetchNottinghamData() =
-        ApiConfig.getInstance().create(ApiService::class.java).getLondon()
+        ApiConfig.getInstance().create(ApiService::class.java).getnottingham()
 }

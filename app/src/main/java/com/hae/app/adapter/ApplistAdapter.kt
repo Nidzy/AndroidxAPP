@@ -1,5 +1,6 @@
 package com.hae.app.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.hae.app.R
 import com.hae.app.databinding.RowAppsBinding
 import com.hae.app.model.AppsInfo
-
 
 
 class ApplistAdapter(var appList: MutableList<AppsInfo> = mutableListOf()) :
@@ -30,7 +30,6 @@ class ApplistAdapter(var appList: MutableList<AppsInfo> = mutableListOf()) :
         with(holder) {
             if (appList.size > 0) {
                 val apps = appList[position]
-                //holder.itemView.tvApp.text = people.appName
                 binding.tvName.text = apps.appName
                 binding.ivApp.setImageDrawable(apps.icon)
 

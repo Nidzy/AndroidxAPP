@@ -24,7 +24,6 @@ class ApiConfig {
                     .baseUrl(BASE_URL)
                     .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
-//                    .addConverterFactory(GsonConverterFactory.create(GsonBuilder().setLenient().create()))
                     .build()
                     .also { INSTANCE = it }
 

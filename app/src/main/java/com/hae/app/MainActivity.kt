@@ -68,11 +68,6 @@ class MainActivity : AppCompatActivity() {
         cityViewModel.getCity().observe(this, Observer { cityData ->
             if (cityData != null) {
 
-                Log.d("cityName :", cityData.city)
-                Log.d("country :", cityData.country)
-                Log.d("temperature :", cityData.temperature)
-                Log.d("description :", cityData.description)
-
                 binding.tvCityData.text =
                     " City Name: ${cityData.city} , \n Country: ${cityData.country} , \n Temperature: ${cityData.temperature} , \n Description: ${cityData.description} "
 

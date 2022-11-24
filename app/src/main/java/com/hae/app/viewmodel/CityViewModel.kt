@@ -26,37 +26,31 @@ class CityViewModel : ViewModel() {
 
                     val responseBeijing = repository.fetchBeijingData()
                     if (responseBeijing.isSuccessful && responseBeijing.body() != null) {
-                        // Log.d("TAG", "Success1")
                         emit(responseBeijing.body()!!)
                     }
                     delayTime()
                     val responseBerlin = repository.fetchBerlinData()
                     if (responseBerlin.isSuccessful && responseBerlin.body() != null) {
-                        // Log.d("TAG", "Success1")
                         emit(responseBerlin.body()!!)
                     }
                     delayTime()
                     val responseCardiff = repository.fetchCardiffData()
                     if (responseCardiff.isSuccessful && responseCardiff.body() != null) {
-                        // Log.d("TAG", "Success1")
                         emit(responseCardiff.body()!!)
                     }
                     delayTime()
                     val responseEdinburgh = repository.fetchEdinburghData()
                     if (responseEdinburgh.isSuccessful && responseEdinburgh.body() != null) {
-                        // Log.d("TAG", "Success1")
                         emit(responseEdinburgh.body()!!)
                     }
                     delayTime()
                     val responseLondon = repository.fetchLondonData()
                     if (responseLondon.isSuccessful && responseLondon.body() != null) {
-                        // Log.d("TAG", "Success1")
                         emit(responseLondon.body()!!)
                     }
                     delayTime()
                     val responseNottingham = repository.fetchNottinghamData()
                     if (responseNottingham.isSuccessful && responseNottingham.body() != null) {
-                        // Log.d("TAG", "Success1")
                         emit(responseNottingham.body()!!)
 
                     }
